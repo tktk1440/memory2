@@ -625,7 +625,7 @@ export class Client extends GameShell {
             canvas2d.textAlign = 'left';
             canvas2d.fillStyle = 'yellow';
             y = 35;
-            canvas2d.fillText('Sorry, an error has occured whilst loading RuneScape', 30, y);
+            canvas2d.fillText('Sorry, an error has occured whilst loading Memoryscape', 30, y);
 
             y += 50;
             canvas2d.fillStyle = 'white';
@@ -655,7 +655,7 @@ export class Client extends GameShell {
             canvas2d.fillText('Error - unable to load game!', 50, y);
 
             y += 50;
-            canvas2d.fillText('To play RuneScape make sure you play from', 50, y);
+            canvas2d.fillText('To play Memoryscape make sure you play from', 50, y);
 
             y += 50;
             canvas2d.fillText('An approved domain', 50, y); // "http://www.runescape.com"
@@ -665,7 +665,7 @@ export class Client extends GameShell {
             canvas2d.fillStyle = 'yellow';
 
             y = 35;
-            canvas2d.fillText('Error a copy of RuneScape already appears to be loaded', 30, y);
+            canvas2d.fillText('Error a copy of Memoryscape already appears to be loaded', 30, y);
 
             y += 50;
             canvas2d.fillStyle = 'white';
@@ -1432,7 +1432,7 @@ export class Client extends GameShell {
                 this.p11?.centreStringTag(this.onDemand.message, w / 2, extraY, 0x75a9a9, true);
             }
 
-            this.b12?.centreStringTag('Welcome to RuneScape', w / 2, y, Colour.YELLOW, true);
+            this.b12?.centreStringTag('Welcome to Memoryscape', w / 2, y, Colour.YELLOW, true);
             y += 30;
 
             let x = ((w / 2) | 0) - 80;
@@ -1478,7 +1478,7 @@ export class Client extends GameShell {
             this.b12?.centreStringTag('To create a new account you need to', x, y, Colour.WHITE, true);
             y += 15;
 
-            this.b12?.centreStringTag('go back to the main RuneScape webpage', x, y, Colour.WHITE, true);
+            this.b12?.centreStringTag('go back to the main Memoryscape webpage', x, y, Colour.WHITE, true);
             y += 15;
 
             this.b12?.centreStringTag("and choose the red 'create account'", x, y, Colour.WHITE, true);
@@ -2135,7 +2135,7 @@ export class Client extends GameShell {
                 this.loginMes1 = 'Your account is already logged in.';
                 this.loginMes2 = 'Try again in 60 secs...';
             } else if (response === 6) {
-                this.loginMes1 = 'RuneScape has been updated!';
+                this.loginMes1 = 'Memoryscape has been updated!';
                 this.loginMes2 = 'Please reload this page.';
             } else if (response === 7) {
                 this.loginMes1 = 'This world is full.';
@@ -4093,7 +4093,7 @@ export class Client extends GameShell {
         const y: number = 200;
 
         const offsetY: number = 20;
-        this.b12?.centreString('RuneScape is loading - please wait...', (x / 2) | 0, ((y / 2) | 0) - offsetY - 26, Colour.WHITE);
+        this.b12?.centreString('Memoryscape is loading - please wait...', (x / 2) | 0, ((y / 2) | 0) - offsetY - 26, Colour.WHITE);
 
         const midY: number = ((y / 2) | 0) - 18 - offsetY;
         Pix2D.drawRect(((x / 2) | 0) - 152, midY, 304, 34, 0x8c1111);
