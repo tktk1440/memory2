@@ -36,13 +36,19 @@ if [ ! -f engine/.env ]; then
     cat > engine/.env <<'ENV'
 NODE_PRODUCTION=true
 NODE_DEBUG=false
+# Memoryscape: 2x XP rate (vanilla rev 254 is 1). Bump higher to speed up
+# leveling for demos. Engine reads this directly; no code change needed.
+NODE_XPRATE=2
 ENV
     echo "wrote engine/.env (production mode for FD-limited environments)"
 fi
 
 # Build content packs (idempotent — skips if data/pack/ is up to date).
+# BUILD_VERIFY=false is needed because we've modified upstream content
+# (added items, edited login script); the build's checksum check assumes
+# pristine LostCity content.
 if [ ! -d engine/data/pack ]; then
-    (cd engine && bun run build)
+    (cd engine && BUILD_VERIFY=false bun run build)
 fi
 
 echo

@@ -1,6 +1,12 @@
 [login,_]
-mes("Welcome to RuneScape.");
+mes("Welcome to Memoryscape.");
 cam_reset;
+
+// Memoryscape: give every player a keepsake compass on first login.
+if (inv_total(inv, memoryscape_compass) = 0) {
+    inv_add(inv, memoryscape_compass, 1);
+    mes("A small brass compass appears in your pack.");
+}
 
 %musicplay = 1; // set to auto on login
 if (%option_brightness = 0) {

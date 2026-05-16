@@ -1,0 +1,16 @@
+// Custom Memoryscape items. Add new entries here and register their ID in
+// ../../../pack/obj.pack on the next free integer ID.
+
+[memoryscape_compass]
+name=Memoryscape compass
+desc=A small brass compass. The needle points to your earliest memory.
+model=model_2515_obj
+recol1s=31649
+recol1d=8128
+2dxof=1
+2dyof=16
+2dzoom=620
+2dyan=68
+2dxan=424
+weight=10g
+tradeable=no
