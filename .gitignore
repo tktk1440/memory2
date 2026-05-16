@@ -1,0 +1,51 @@
+node_modules/
+.DS_Store
+
+server.json
+
+# Engine: generated / local config (see engine/.gitignore upstream)
+engine/.env
+engine/out/
+engine/tsconfig.tsbuildinfo
+engine/data/pack/
+engine/data/src/
+engine/data/unpack/
+engine/data/players/
+engine/data/sessions/
+engine/data/symbols/
+engine/data/config/worlds.json
+engine/data/config/login.json
+engine/data/config/friend.json
+engine/dump/
+engine/db.sqlite
+engine/db.sqlite-journal
+engine/coverage/
+engine/**/*.bz2
+engine/**/PreloadedDirs.ts
+engine/public/loader.jar
+engine/public/runescape*.jar
+engine/public/client/*.js.map
+
+# Content: server-only generated packs (see content/.gitignore upstream)
+content/pack/script.pack
+content/pack/param.pack
+content/pack/category.pack
+content/pack/enum.pack
+content/pack/struct.pack
+content/pack/mesanim.pack
+content/pack/dbtable.pack
+content/pack/dbrow.pack
+content/pack/hunt.pack
+content/pack/varn.pack
+content/pack/vars.pack
+content/pack/map.pack
+content/pack/midi.pack
+content/pack/animset.pack
+
+# Webclient: build artifacts (see webclient/.gitignore upstream)
+webclient/out/
+webclient/private.pem
+webclient/public.pem
+
+# Optional Java client (only present if RS_INCLUDE_JAVA_CLIENT=1 was set)
+javaclient/
