@@ -13,5 +13,4 @@ pack/hunt.pack
 pack/varn.pack
 pack/vars.pack
 pack/map.pack
-pack/midi.pack
-pack/animset.pack
+# pack/midi.pack and pack/animset.pack intentionally NOT ignored — see root .gitignore

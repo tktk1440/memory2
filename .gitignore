@@ -26,7 +26,10 @@ engine/public/loader.jar
 engine/public/runescape*.jar
 engine/public/client/*.js.map
 
-# Content: server-only generated packs (see content/.gitignore upstream)
+# Content: server-only generated packs (see content/.gitignore upstream).
+# animset.pack and midi.pack are NOT ignored — the build's validateFilesPack
+# requires them to pre-exist (verify=true in PackFile.ts), so a fresh clone
+# would fail without them committed.
 content/pack/script.pack
 content/pack/param.pack
 content/pack/category.pack
@@ -39,8 +42,6 @@ content/pack/hunt.pack
 content/pack/varn.pack
 content/pack/vars.pack
 content/pack/map.pack
-content/pack/midi.pack
-content/pack/animset.pack
 
 # Webclient: build artifacts (see webclient/.gitignore upstream)
 webclient/out/
