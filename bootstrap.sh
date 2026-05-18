@@ -39,6 +39,12 @@ NODE_DEBUG=false
 # Memoryscape: 2x XP rate (vanilla rev 254 is 1). Bump higher to speed up
 # leveling for demos. Engine reads this directly; no code change needed.
 NODE_XPRATE=2
+# Skip pack-data checksum verification. Required because Memoryscape adds
+# the compass to obj.pack, which changes the .obj checksum away from the
+# vanilla LostCity value the engine ships with. `bun start` re-runs this
+# check on every boot, so it has to be off persistently — not just at
+# build time.
+BUILD_VERIFY=false
 ENV
     echo "wrote engine/.env (production mode for FD-limited environments)"
 fi
